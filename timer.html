@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro timer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>Timer</li>
+        <li>Blocker</li>
+        <li>Tasks</li>
+    </ul>
+</nav>
+<main>
+    <div id="clock"></div>
+
+    <div class="container mt-4">
+            <div class="input-group">
+                <label id = "timerLabel" for="timerInput">Focus</label>
+                <input type="number" class="form-control input-group" id="timerInput" min="0" max="60" value="0" step="5">
+            </div>
+
+
+            <div class="input-group">
+                <label id = "breakLabel" for="breakInput">Break</label>
+                <input type="number" class="form-control input-group" id="breakInput" min="0" max="15" value="0" step="5">
+            </div>
+
+        <button id="startTimerBtn">Start</button>
+    </div>
+
+</main>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

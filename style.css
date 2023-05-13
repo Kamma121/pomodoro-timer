@@ -1,0 +1,45 @@
+:root{
+    --mainPurple:#BB86FC;
+}
+
+.input-group{
+    padding:15px;
+    border:2px solid;
+    margin-bottom: 2rem;
+}
+.input-group>label{
+    position:absolute;
+    top:-16px;
+    left:20px;
+    background-color:white;
+}
+
+.input-group>input{
+    border:none;
+}
+.input-group>input:focus{
+    box-shadow:none;
+}
+.input-group:focus-within {
+    box-shadow: 0 0 0 0.2rem var(--mainPurple) ;
+    border-color: white;
+}
+.container{
+    text-align: center;
+}
+.form-control{
+    width: 100%;
+}
+#startTimerBtn {
+    background-color: var(--mainPurple);
+    border-color: var(--mainPurple);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.1s, filter 0.1s;
+}
+#startTimerBtn:hover{
+    filter:brightness(110%);
+}

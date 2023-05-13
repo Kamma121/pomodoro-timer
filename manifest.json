@@ -1,0 +1,14 @@
+{
+  "name": "Pomodoro timer",
+  "version": "1.0.0",
+  "description": "Tool that boost your time management",
+  "manifest-version": 3,
+  "author": "Kamil Sodo",
+  "action": {
+    "default_popup": "timer.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ]
+}
