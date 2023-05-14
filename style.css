@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&family=Roboto:wght@500&display=swap');
+
 :root{
     --mainPurple:#BB86FC;
+    --mainColor:#303030;
+}
+
+body{
+    background-color:var(--mainColor);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .input-group{
     padding:15px;
-    border:2px solid;
-    margin-bottom: 2rem;
+    border:3px solid;
+    width: 70%;
+    margin: 0 auto 20px;
 }
+
 .input-group>label{
     position:absolute;
     top:-16px;
@@ -22,19 +33,17 @@
 }
 .input-group:focus-within {
     box-shadow: 0 0 0 0.2rem var(--mainPurple) ;
-    border-color: white;
+    border:none;
 }
 .container{
     text-align: center;
 }
-.form-control{
-    width: 100%;
-}
+
 #startTimerBtn {
     background-color: var(--mainPurple);
     border-color: var(--mainPurple);
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     font-size: 18px;
     outline: none;
     cursor: pointer;
@@ -42,4 +51,68 @@
 }
 #startTimerBtn:hover{
     filter:brightness(110%);
+}
+nav{
+    background-color: #121212;
+    z-index: 1;
+    color:white;
+    margin-bottom: 2rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-between ;
+    padding:10px;
+}
+nav li{
+    flex:1;
+    border-right: 1px solid dimgrey;
+    padding:0;
+    text-align: center;
+}
+nav li:last-child{
+    border-right: none;
+}
+a{
+    color:white;
+}
+a:hover{
+    text-decoration: none;
+    color:dimgrey;
+    transition: 80ms ease-in;
+}
+#breakLabel{
+    background-color:var(--mainColor) ;
+    color:white;
+}
+#timerLabel{
+    background-color:var(--mainColor) ;
+    color:white;
+}
+
+
+#timer-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.timer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+.status{
+    color:white;
 }
